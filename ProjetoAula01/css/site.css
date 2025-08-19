@@ -1,0 +1,282 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+html {
+  letter-spacing: 1.4px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-black {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+body {
+  background-color: #f9eeee;
+}
+
+.container {
+  width: 96%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.container::after,
+.container::before {
+  content: " ";
+  display: table;
+  /*Antes e depois, terei um conteúdo e se comportará como uma tabela.*/
+}
+
+.container::after {
+  clear: both;
+}
+
+/* evitar conflito com o float*/
+/*minha grid definindo o tamanho de cada quadro*/
+.box-1 {
+  width: 6.818181818181818%;
+}
+
+.box-2 {
+  width: 15.15151515151515%;
+}
+
+.box-3 {
+  width: 23.48484848484848%;
+}
+
+.box-4 {
+  width: 31.81818181818182%;
+}
+
+.box-5 {
+  width: 40.15151515151515%;
+}
+
+.box-6 {
+  width: 48.48484848484848%;
+}
+
+.box-7 {
+  width: 56.81818181818182%;
+}
+
+.box-8 {
+  width: 65.15151515151515%;
+}
+
+.box-9 {
+  width: 73.48484848484848%;
+}
+
+.box-10 {
+  width: 81.81818181818182%;
+}
+
+.box-11 {
+  width: 90.15151515151515%;
+}
+
+.box-12 {
+  width: 98.48484848484848%;
+}
+
+.box-1,
+.box-2,
+.box-3,
+.box-4,
+.box-5,
+.box-6,
+.box-7,
+.box-8,
+.box-9,
+.box-10,
+.box-11,
+.box-12 {
+  float: left;
+  margin-left: 0.75%;
+  margin-right: 0.75%;
+}
+
+/* CSS - Cabeçalho (header) do site*/
+.cabecalho {
+  background-color: #f4a9a8;
+  width: 100%;
+  height: 80px;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
+  font-size: 2.5vh;
+}
+
+nav {
+  width: 100%;
+}
+
+ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+}
+
+ul li {
+  margin-top: 15px;
+  margin-left: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+  font-weight: 600;
+  color: black;
+}
+
+/*fim cabeçalho*/
+
+.big-text {
+  font-size: 5vh;
+  text-align: center;
+}
+
+/* HOME*/
+.home {
+  margin-top: 80px;
+  background-color: #f9eeee;
+  scroll-margin-top: 100px;
+}
+
+
+.home .big-text {
+  margin-top: 18px;
+}
+
+.home .text {
+  font-size: 16px;
+  letter-spacing: 1.8px;
+  display: block;
+  margin: 0 auto;
+  text-align: justify;
+  margin: 30px;
+}
+
+
+/* FIM - HOME*/
+
+/* INÍCIO - CONTEÚDO*/
+.conteudo {}
+
+.conteudo .big-text {}
+
+.conteudo .big-text::after {
+  /* cria a linha abaixo do texto   */
+
+}
+
+
+.conteudo .box-3 {}
+
+.conteudo .box-3 img:hover {}
+
+.conteudo .box-3 img {}
+
+.conteudo .box-3 p {}
+
+/* FIM - CONTEÚDO*/
+
+
+/* SOBRE*/
+.sobre {}
+
+.sobre .big-text {}
+
+.sobre .big-text::after {
+  /* cria a linha abaixo do texto   */
+
+
+}
+
+.sobre .box-4 {}
+
+.sobre .box-8 {}
+
+.sobre img {}
+
+.sub-title {}
+
+.paragrafo {}
+
+/* FIM - SOBRE*/
+
+/*CONTATO*/
+.contato {}
+
+.contato .big-text {}
+
+.contato .big-text::after {
+  /* cria a linha abaixo do texto   */
+}
+
+.contato form {}
+
+.contato input,
+textarea {}
+
+.contato textarea {}
+
+.contato .sub {}
+
+.btn {}
+
+.btn:hover {}
+
+.contato ul {}
+
+.contato ul li {}
+
+.contato ul li i {}
+
+.contato ul li .whats:hover {}
+
+/* FIM - CONTATO*/
+
+/*FOOTER*/
+footer {
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Vídeo responsivo*/
+
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  max-width: 100%;
+  background: #000;
+}
+
+.video-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+/* logo*/
+.box-4.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
