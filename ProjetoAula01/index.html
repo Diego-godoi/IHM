@@ -1,159 +1,452 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Página Principal</title>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
-    rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-    crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/site.css">
-</head>
-
-<body>
-  <!-- Cabeçalho Início-->
-  <header class="cabecalho"><!-- Chama a classe-->
-    <div class="container">
-      <div class="box-4 logo">
-        <a href="index.html" style="text-decoration: none; color: inherit;">
-          <img src="./img/logo.png" style="width: 50px; height: auto;"></a>
-        <h3>Saúde & Idoso</h3>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Página Principal</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif+Dives+Akuru&family=Parisienne&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="css/site.css" />
+  </head>
+  <body>
+    <!-- Cabeçalho Início-->
+    <header class="cabecalho">
+      <!-- Chama a classe-->
+      <div class="container">
+        <!-- início container-->
+        <div class="box-4 logo">
+          <a href="index.html" style="text-decoration: none; color: inherit">
+            <img src="./img/logo.png" style="width: 50px; height: auto" />
+          </a>
+          <h3>Saúde & Idoso</h3>
+        </div>
+        <div class="box-8">
+          <nav>
+            <!-- Barra de navegação-->
+            <ul>
+              <!--Cria uma lista para os intens (menu do site)-->
+              <li><a href="#inicio">Home</a></li>
+              <li><a href="#conteudo">Conteúdo</a></li>
+              <li><a href="#sobre">Sobre nós</a></li>
+              <li><a href="#contato">Contato</a></li>
+            </ul>
+          </nav>
+        </div>
+        <!-- Fim box-8 -->
       </div>
-      <div class="box-8">
-        <nav>
+      <!-- Fim container-->
+    </header>
+    <!-- Cabeçalho Fim-->
+
+    <!-- SESSÃO HOME -->
+    <section class="home" id="inicio">
+      <div class="container">
+        <div class="box-6">
+          <h2 class="big-text" style="color: #b22222">
+            Saúde do Idoso: Viva Melhor na Terceira Idade
+          </h2>
+          <p class="text">
+            Envelhecer com qualidade de vida é possível e deve ser um objetivo
+            para todos. A terceira idade pode ser uma fase de novas descobertas,
+            tranquilidade e bem-estar, desde que haja cuidados com a saúde
+            física, emocional e social. Praticar atividades físicas, manter uma
+            alimentação equilibrada e realizar exames médicos regularmente são
+            atitudes essenciais para garantir um envelhecimento saudável e
+            ativo.
+          </p>
+          <p class="text">
+            A saúde mental também desempenha um papel fundamental nessa etapa da
+            vida. Participar de atividades sociais, manter o contato com amigos
+            e familiares, e exercitar a mente com leituras, jogos ou cursos
+            ajuda a prevenir o isolamento e doenças como a depressão e o
+            Alzheimer. O apoio da família e o respeito à autonomia do idoso
+            contribuem para sua autoestima e felicidade.
+          </p>
+        </div>
+        <div class="box-6">
+          <h2 style="color: #b22222; margin-bottom: 35px; text-align: center">
+            Conheça o nosso projeto - Assista o vídeo
+          </h2>
+          <div class="video-container">
+            <iframe
+              src="https://www.youtube.com/embed/IIfQS_7GFCg?si=mKw8FFKSy9s0_T0c"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <br />
+    </section>
+    <!-- FIM - SESSÃO HOME-->
+
+    <!-- INÍCIO - SESSÃO CONTEÚDO-->
+    <section id="conteudo" class="conteudo">
+      <div class="container">
+        <!-- INÍCIO - CONTAINER-->
+        <div class="box-12">
+          <h2 class="big-text">Clique na imagem para acessar o conteúdo</h2>
+        </div>
+      </div>
+      <!-- FIM - CONTAINER-->
+      <div class="container">
+        <!-- INÍCIO - CONTAINER-->
+
+        <div class="box-3">
+          <a href="pagina1.html" style="text-decoration: none; color: inherit">
+            <img src="./img/img001.jpg" style="height: 40vh" />
+          </a>
+        </div>
+        <div class="box-3">
+          <h3 class="sub-title" style="color: #b22222">
+            Prevenção e Promoção da Saúde
+          </h3>
+          <p class="paragrafo">
+            Inclui temas como alimentação equilibrada, atividade física,
+            vacinação, controle de fatores de risco e autocuidado
+          </p>
+        </div>
+        <div class="box-3">
+          <img src="./img/img002.jpg" style="height: 40vh" />
+        </div>
+        <div class="box-3">
+          <h3 class="sub-title" style="color: #b22222">
+            Doenças Crônicas e Comorbidades
+          </h3>
+          <p class="paragrafo">
+            Cobertura de condições prevalentes em idosos: diabetes, hipertensão,
+            doenças cardiovasculares, osteoporose, além de sarcopenia e perda
+            auditiva.
+          </p>
+        </div>
+      </div>
+      <!-- FIM - CONTAINER-->
+
+      <div class="container">
+        <!-- INÍCIO - CONTAINER-->
+
+        <div class="box-3">
+          <img src="./img/img003.jpg" style="height: 40vh" />
+        </div>
+        <div class="box-3">
+          <h3 class="sub-title" style="color: #b22222">
+            Funcionalidade e Reabilitação
+          </h3>
+          <p class="paragrafo">
+            A avaliação funcional da pessoa idosa e como manter sua autonomia
+            são eixos centrais na atenção integral à saúde.
+          </p>
+        </div>
+        <div class="box-3">
+          <img src="./img/img004.jpg" style="height: 40vh" />
+        </div>
+        <div class="box-3">
+          <h3 class="sub-title" style="color: #b22222">
+            Violência, Direitos e Rede de Apoio
+          </h3>
+          <p class="paragrafo">
+            Identificação de casos de violência contra idosos (física,
+            psicológica, financeira, sexual) e orientações de proteção e
+            denúncia
+          </p>
+        </div>
+      </div>
+      <!-- FIM - CONTAINER-->
+    </section>
+    <!-- FIM - SESSÃO CONTEÚDO-->
+
+    <!-- ___________________________________________________________________________________-->
+
+    <!-- INÍCIO - SESSÃO SOBRE-->
+    <section id="sobre" class="sobre">
+      <div class="container">
+        <div class="box-12">
+          <h2 class="big-text">Sobre Nós</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="box-12">
+          <img src="./img/equipe.jpg" />
+        </div>
+      </div>
+      <div class="container">
+        <!-- INÍCIO - SESSÃO CONTAINER-->
+        <div class="box-6">
+          <!-- INÍCIO - BOX-6 -->
+          <h3 class="sub-title" style="color: #b22222">A equipe</h3>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+        </div>
+        <!--FIM - BOX-6 -->
+        <div class="box-6">
+          <!-- INÍCIO - BOX-6 -->
+          <h3 class="sub-title" style="color: #b22222">O Site - Projeto</h3>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+          <p class="paragrafo">
+            <!--Copie e cole o texto várias vezes-->
+            A Pão & Cia Padaria e Confeitaria é uma rede de padarias e
+            confeitarias que se destaca pela tradição, qualidade e variedade de
+            produtos. Com unidades espalhadas por diversas regiões do Brasil, a
+            marca oferece um ambiente acolhedor e um menu completo de pães,
+            bolos, doces, salgados e cafés.
+          </p>
+        </div>
+        <!--FIM - BOX-6 -->
+      </div>
+      <!-- FIM SESSÃO CONTAINER -->
+    </section>
+    <!-- FIM - SESSÃO SOBRE-->
+
+    <!-- ___________________________________________________________________________________-->
+
+    <!-- INICIO SESSÃO CONTATO -->
+    <section id="contato" class="contato">
+      <div class="container">
+        <div class="box-12"><br />
+          <h2 class="big-text">Entre em contato conosco</h2>
+        </div>
+        <div class="box-6">
+          <h6 class="sub">Formulário de contato</h6>
+          <form action="">
+            <label>Nome</label><input type="text" /> 
+            <label>Telefone</label><input type="text" />
+            <label>Assunto</label><textarea maxlength="500"></textarea>
+            <input type="submit" class="btn" value="Enviar" />
+          </form>
+        </div>
+        <div class="box-6">
           <ul>
-            <li><a href="#inicio">Home</a></li>
-            <li><a href="#conteudo">Conteúdo</a></li>
-            <li><a href="#sobre">Sobre nós</a></li>
-            <li><a href="#contato">Contato</a></li>
+            <li>
+              <a href="https://wa.me/5565996586325?" target="_blank">
+                <i class="fa-brands fa-square-whatsapp whats"></i
+              ></a>
+              Clique no icone
+            </li>
+
+            <li>
+              <a
+                href="https://mail.google.com/mail/?view=cm&fs=1&to=diegogodoimartins.11@gmail.com"
+                target="_blank"
+              >
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              diegogodoimartins.11@gmail.com
+            </li>
+            <li>
+              <a href="https://www.instagram.com/_.godoi_" target="_blank"
+                ><i class="fa-brands fa-square-instagram"></i
+              ></a>
+              @_.godoi_
+            </li>
+            <li>
+              <!---Chame o professor para ensinar como inserir o localização-->
+              <a
+                href="https://maps.app.goo.gl/CJNqZfMvicL6vqgS9"
+                target="_blank"
+              >
+                <i class="fa-solid fa-location-dot"></i>
+              </a>
+              IFMT - Campus Cáceres/MT.
+            </li>
+            <li style="border-bottom: none">
+              <!---Chame o professor para ensinar como inserir o localização-->
+              <iframe
+                style="padding-left: 10px; border: none"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1916.3715345122919!2d-57.6974219016052!3d-16.130586600000004!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x939afef71da659c9%3A0xa2fa6b78b3934e31!2sInstituto%20Federal%20de%20Mato%20Grosso%20IFMT%20Campus%20C%C3%A1ceres!5e0!3m2!1spt-BR!2sbr!4v1754070079070!5m2!1spt-BR!2sbr"
+                width="600"
+                height="450"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              >
+              </iframe>
+            </li>
           </ul>
-        </nav>
+        </div>
       </div>
-    </div>
-  </header>
-  <!-- Cabeçalho Fim-->
+      <br /><br />
+    </section>
+    <!-- FIM SESSÃO CONTATO -->
 
-  <!-- SESSÃO HOME -->
-  <section class="home" id="inicio">
-    <div class="container">
-      <div class="box-6">
-        <h2 class="big-text" style="color: #b22222;">Saúde do Idoso: Viva Melhor na Terceira Idade</h2>
-        <p class="text">Envelhecer com qualidade de vida é possível e deve ser um objetivo para todos. A terceira idade
-          pode ser uma fase de novas descobertas, tranquilidade e bem-estar, desde que haja cuidados com a saúde física,
-          emocional e social. Praticar atividades físicas, manter uma alimentação equilibrada e realizar exames médicos
-          regularmente são atitudes essenciais para garantir um envelhecimento saudável e ativo.</p>
-        <p class="text">A saúde mental também desempenha um papel fundamental nessa etapa da vida. Participar de
-          atividades sociais, manter o contato com amigos e familiares, e exercitar a mente com leituras, jogos ou
-          cursos ajuda a prevenir o isolamento e doenças como a depressão e o Alzheimer. O apoio da família e o respeito
-          à autonomia do idoso contribuem para sua autoestima e felicidade.</p>
-      </div>
-      <div class="box-6">
-        <h2 style="color: #b22222; margin-bottom: 35px; text-align: center;">Conheca o nosso projeto - Assista o vídeo
-        </h2>
-        <div class="video-container"><iframe src="https://www.youtube.com/embed/IIfQS_7GFCg?si=mKw8FFKSy9s0_T0c"
-            title="Youtube video player"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            frameborder="0" allowfullscreen></iframe></div>
-      </div>
-    </div>
-    <br>
-  </section>
-  <!-- FIM - SESSÃO HOME-->
+    <!-- ___________________________________________________________________________________-->
 
-  <!-- INÍCIO - SESSÃO CONTEÚDO-->
-  <section id="conteudo" class="conteudo">
+    <!-- INÍCIO FOOTER -->
+    <footer
+      style="
+        background-color: #f4a9a8;
+        color: #2c2c2c;
+        padding: 40px 0;
+        font-family: 'Poppins', sans-serif;
+      "
+    >
+      <div
+        class="container"
+        style="
+          display: flex;
+          justify-content: space-between;
+          align-items: flex-start;
+          gap: 40px;
+          max-width: 1200px;
+          margin: 0 auto;
+          padding: 0 20px;
+          flex-wrap: nowrap; /* Impede quebra de linha */
+        "
+      >
+        <!-- Logo e descrição -->
+        <div style="flex: 1 1 250px; max-width: 300px; padding-right: 20px">
+          <img
+            src="./img/logo.png"
+            alt="Logo Saúde & Idoso"
+            style="width: 60px"
+          />
+          <h3 style="margin-top: 10px">Saúde & Idoso</h3>
+          <p style="font-size: 14px; color: #333">
+            Cuidando da qualidade de vida na terceira idade com informação,
+            acolhimento e bem-estar.
+          </p>
+        </div>
 
+        <!-- Navegação -->
+        <div style="flex: 1 1 180px; text-align: center">
+          <h4 style="margin-bottom: 10px; margin-left: 25px">Navegação</h4>
+          <ul
+            style="
+              list-style: none;
+              padding: 0;
+              font-size: 14px;
+              margin: 0 auto;
+              display: flex;
+              flex-direction: column;
+              gap: 8px;
+              align-items: center;
+            "
+          >
+            <li>
+              <a href="#inicio" style="color: #333; text-decoration: none"
+                >Início</a
+              >
+            </li>
+            <li>
+              <a href="#conteudo" style="color: #333; text-decoration: none"
+                >Conteúdo</a
+              >
+            </li>
+            <li>
+              <a href="#sobre" style="color: #333; text-decoration: none"
+                >Sobre</a
+              >
+            </li>
+            <li>
+              <a href="#contato" style="color: #333; text-decoration: none"
+                >Contato</a
+              >
+            </li>
+          </ul>
+        </div>
 
+        <!-- Redes sociais centralizadas -->
+        <div style="flex: 1 1 220px; text-align: center">
+          <h4 style="margin-bottom: 10px">Redes Sociais</h4>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              gap: 15px;
+              font-size: 20px;
+            "
+          >
+            <a href="#" style="color: #2c2c2c"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+            <a href="#" style="color: #2c2c2c"
+              ><i class="fab fa-instagram"></i
+            ></a>
+            <a href="#" style="color: #2c2c2c"
+              ><i class="fab fa-youtube"></i
+            ></a>
+            <a href="#" style="color: #2c2c2c"
+              ><i class="fab fa-whatsapp"></i
+            ></a>
+          </div>
+        </div>
 
-
-  </section>
-  <!-- FIM - SESSÃO CONTEÚDO-->
-
-  <!-- INÍCIO - SESSÃO SOBRE-->
-  <section id="sobre" class="sobre">
-
-
-
-  </section> <!-- FIM - SESSÃO SOBRE-->
-
-  <!-- INICIO SESSÃO CONTATO -->
-  <section id="contato" class="contato">
-
-
-  </section> <!-- FIM SESSÃO CONTATO -->
-
-  <!-- INÍCIO FOOTER -->
-  <footer style="background-color: #F4A9A8; color: #2c2c2c; padding: 40px 0; font-family: 'Poppins', sans-serif;">
-    <div class="container" style="
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    gap: 40px;
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-    flex-wrap: nowrap; /* Impede quebra de linha */
-  ">
-
-      <!-- Logo e descrição -->
-      <div style="flex: 1 1 250px; max-width: 300px; padding-right: 20px;">
-        <img src="./img/logo.png" alt="Logo Saúde & Idoso" style="width: 60px;">
-        <h3 style="margin-top: 10px;">Saúde & Idoso</h3>
-        <p style="font-size: 14px; color: #333;">
-          Cuidando da qualidade de vida na terceira idade com informação, acolhimento e bem-estar.
-        </p>
-      </div>
-
-      <!-- Navegação -->
-      <div style="flex: 1 1 180px; text-align: center;">
-        <h4 style="margin-bottom: 10px; margin-left: 25px;">Navegação</h4>
-        <ul style="
-        list-style: none;
-        padding: 0;
-        font-size: 14px;
-        margin: 0 auto;
-        display: flex;
-        flex-direction: column;
-        gap: 8px;
-        align-items: center;
-      ">
-          <li><a href="#inicio" style="color: #333; text-decoration: none;">Início</a></li>
-          <li><a href="#conteudo" style="color: #333; text-decoration: none;">Conteúdo</a></li>
-          <li><a href="#sobre" style="color: #333; text-decoration: none;">Sobre</a></li>
-          <li><a href="#contato" style="color: #333; text-decoration: none;">Contato</a></li>
-        </ul>
-      </div>
-
-      <!-- Redes sociais centralizadas -->
-      <div style="flex: 1 1 220px; text-align: center;">
-        <h4 style="margin-bottom: 10px;">Redes Sociais</h4>
-        <div style="display: flex; justify-content: center; gap: 15px; font-size: 20px;">
-          <a href="#" style="color: #2c2c2c;"><i class="fab fa-facebook-f"></i></a>
-          <a href="#" style="color: #2c2c2c;"><i class="fab fa-instagram"></i></a>
-          <a href="#" style="color: #2c2c2c;"><i class="fab fa-youtube"></i></a>
-          <a href="#" style="color: #2c2c2c;"><i class="fab fa-whatsapp"></i></a>
+        <!-- Contato -->
+        <div style="flex: 1 1 220px">
+          <h4>Contato</h4>
+          <p style="font-size: 14px">
+            <i class="fa-solid fa-envelope"></i> marcelo.meira@ifmt.edu.br
+          </p>
+          <p style="font-size: 14px">
+            <i class="fa-brands fa-whatsapp"></i> (65) 9 9999-9999
+          </p>
+          <p style="font-size: 14px">
+            <i class="fa-solid fa-location-dot"></i> Rua 11, São Luiz - Cáceres
+            - MT
+          </p>
         </div>
       </div>
 
-      <!-- Contato -->
-      <div style="flex: 1 1 220px;">
-        <h4>Contato</h4>
-        <p style="font-size: 14px;"><i class="fa-solid fa-envelope"></i> marcelo.meira@ifmt.edu.br</p>
-        <p style="font-size: 14px;"><i class="fa-brands fa-whatsapp"></i> (65) 9 9999-9999</p>
-        <p style="font-size: 14px;"><i class="fa-solid fa-location-dot"></i> Rua 11, São Luiz - Cáceres - MT</p>
+      <!-- Direitos autorais -->
+      <div
+        style="
+          text-align: center;
+          margin-top: 30px;
+          font-size: 13px;
+          color: #444;
+        "
+      >
+        &copy; 2025 Saúde & Idoso. Todos os direitos reservados.
       </div>
-
-    </div>
-
-    <!-- Direitos autorais -->
-    <div style="text-align: center; margin-top: 30px; font-size: 13px; color: #444;">
-      &copy; 2025 Saúde & Idoso. Todos os direitos reservados.
-    </div>
-  </footer>
-</body>
-
+    </footer>
+  </body>
 </html>

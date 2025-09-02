@@ -108,14 +108,22 @@ body {
 
 /* CSS - Cabeçalho (header) do site*/
 .cabecalho {
-  background-color: #f4a9a8;
+  background-color: #F4A9A8;
+  /* Define a cor de fundo do cabeçalho */
   width: 100%;
+  /* Faz o cabeçalho ocupar toda a largura da tela */
   height: 80px;
+  /* Define a altura fixa do cabeçalho em 80px */
   padding: 10px;
+  /* Cria um espaçamento interno de 10px em todos os lados */
   position: fixed;
+  /* Mantém o cabeçalho fixo na parte superior da página, mesmo ao rolar */
   top: 0;
+  /* Posiciona o cabeçalho no topo da tela */
   z-index: 1000;
+  /* Garante que o cabeçalho fique sobre outros elementos da página */
   font-size: 2.5vh;
+  /* Define o tamanho da fonte relativo à altura da tela (viewport height) */
 }
 
 nav {
@@ -125,7 +133,9 @@ nav {
 ul {
   display: flex;
   justify-content: flex-end;
+  /*alinhar a direita os elementos*/
   list-style: none;
+  /*remove os pontihos, bolinhas da lista*/
 }
 
 ul li {
@@ -133,10 +143,14 @@ ul li {
   margin-left: 30px;
 }
 
+/*margin dos itens da lista*/
 ul li a {
   text-decoration: none;
+  /* Remove o sublinhado padrão dos links */
   font-weight: 600;
+  /* Define o peso da fonte como seminegrito (mais grosso que o normal) */
   color: black;
+  /* Altera a cor do texto do link para preto */
 }
 
 /*fim cabeçalho*/
@@ -149,134 +163,341 @@ ul li a {
 /* HOME*/
 .home {
   margin-top: 80px;
+  /* Cria um espaço superior de 80px para evitar que o conteúdo fique escondido pelo cabeçalho fixo */
   background-color: #f9eeee;
+  /* Define uma cor de fundo clara (rosa bem suave) para a seção */
   scroll-margin-top: 100px;
+  /* Ajusta a posição da âncora ao usar rolagem com links (offset de 100px do topo) */
 }
-
 
 .home .big-text {
   margin-top: 18px;
+  /* Dá um espaço acima do texto principal dentro da seção .home */
 }
 
 .home .text {
   font-size: 16px;
+  /* Define o tamanho da fonte do texto */
   letter-spacing: 1.8px;
+  /* Aumenta o espaçamento entre as letras para melhorar a legibilidade */
   display: block;
+  /* Garante que o texto seja exibido como um bloco (ocupa a largura toda) */
   margin: 0 auto;
+  /* Centraliza o bloco horizontalmente */
   text-align: justify;
+  /* Justifica o texto (alinha as margens esquerda e direita) */
   margin: 30px;
+  /* Define margens externas de 30px em todos os lados */
 }
-
 
 /* FIM - HOME*/
 
 /* INÍCIO - CONTEÚDO*/
-.conteudo {}
-
-.conteudo .big-text {}
-
-.conteudo .big-text::after {
-  /* cria a linha abaixo do texto   */
-
+.conteudo {
+  width: 100%;
+  /* A seção ocupa toda a largura disponível */
+  height: auto;
+  /* A altura se ajusta de acordo com o conteúdo interno */
+  margin-top: 30px;
+  /* Espaço externo acima da seção */
+  padding-top: 50px;
+  /* Espaço interno no topo */
+  /* diminui para dar espaço, mas não excessivo */
+  padding-bottom: 50px;
+  /* Espaço interno na parte inferior */
+  scroll-margin-top: 50px;
+  /* Ajusta a posição de rolagem quando usado com âncoras */
+  box-sizing: border-box;
+  /* Inclui padding e borda no cálculo total da largura/altura */
 }
 
+.conteudo .big-text {
+  color: #b22222;
+  /* Define a cor do texto principal (vermelho escuro) */
+}
 
-.conteudo .box-3 {}
+.conteudo .big-text::after {
+  /* cria a linha abaixo do texto */
+  content: "";
+  /* Elemento vazio usado apenas para estilização */
+  width: 600px;
+  /* Define a largura da linha decorativa */
+  height: 6px;
+  /* Espessura da linha */
+  display: block;
+  /* Faz a linha se comportar como um bloco (quebra linha) */
+  margin: 0px auto;
+  /* Centraliza a linha */
+  background-color: #b22222;
+  /* Cor da linha (igual ao título) */
+  margin-bottom: 50px;
+  /* Espaço abaixo da linha */
+}
 
-.conteudo .box-3 img:hover {}
+.conteudo .box-3 {
+  padding: 10px;
+  /* Espaçamento interno */
+  border-radius: 10px;
+  /* Bordas arredondadas */
+  margin-bottom: 30px;
+  /* Espaço externo abaixo do box */
+}
 
-.conteudo .box-3 img {}
+.conteudo .box-3 img:hover {
+  transform: scale(1.1);
+  /* Aumenta a imagem levemente ao passar o mouse */
+  transition: all .15s ease-in-out;
+  /* Define a transição suave para o efeito de zoom */
+  z-index: 1;
+  /* Garante que a imagem fique sobreposta a outros elementos ao expandir */
+}
 
-.conteudo .box-3 p {}
+.conteudo .box-3 img {
+  width: 100%;
+  /* Imagem ocupa toda a largura do box */
+  border-radius: 10px;
+  /* Bordas arredondadas para harmonizar com o box */
+}
+
+.conteudo .box-3 p {
+  width: 100%;
+  /* Parágrafo ocupa toda a largura do box */
+  border-radius: 10px;
+  /* Bordas arredondadas (segue o padrão visual do layout) */
+}
 
 /* FIM - CONTEÚDO*/
 
 
 /* SOBRE*/
-.sobre {}
-
-.sobre .big-text {}
-
-.sobre .big-text::after {
-  /* cria a linha abaixo do texto   */
-
-
+.sobre {
+  width: 100%;
+  /* A seção ocupa toda a largura da tela */
+  height: auto;
+  /* Altura se ajusta automaticamente ao conteúdo */
+  padding-bottom: 20px;
+  /* Espaçamento interno inferior */
+  margin-top: 100px;
+  /* Distância superior da seção em relação ao elemento acima */
+  scroll-margin-top: 100px;
+  /* Define margem ao usar links âncora (rolagem suave) */
 }
 
-.sobre .box-4 {}
+.sobre .big-text {
+  color: #b22222;
+  /* Define a cor do texto (vermelho escuro) */
+}
 
-.sobre .box-8 {}
+.sobre .big-text::after {
+  /* Pseudo-elemento que cria uma linha decorativa abaixo do texto */
+  content: "";
+  /* Necessário para exibir o pseudo-elemento */
+  width: 200px;
+  /* Largura da linha */
+  height: 6px;
+  /* Espessura da linha */
+  display: block;
+  /* Faz a linha ocupar espaço de bloco */
+  margin: 0px auto;
+  /* Centraliza a linha horizontalmente */
+  background-color: #b22222;
+  /* Cor da linha (igual à do título) */
+  margin-bottom: 50px;
+  /* Espaçamento inferior após a linha */
+}
 
-.sobre img {}
+.sobre .box-4 {
+  padding: 10px;
+  /* Espaçamento interno */
+  border-radius: 10px;
+  /* Bordas levemente arredondadas */
+}
 
-.sub-title {}
+.sobre .box-8 {
+  padding: 10px;
+  /* Espaçamento interno */
+  border-radius: 20px;
+  /* Bordas mais arredondadas que o box-4 */
+}
 
-.paragrafo {}
+.sobre img {
+  width: 70%;
+  /* Imagem ocupa 70% da largura do container */
+  height: 50vh;
+  /* Altura proporcional à tela (50% da altura visível) */
+  border-radius: 10px;
+  /* Bordas arredondadas na imagem */
+  display: block;
+  /* Exibe como bloco */
+  margin: 0 auto;
+  /* Centraliza a imagem horizontalmente */
+}
+
+.sub-title {
+  font-size: 28px;
+  /* Tamanho da fonte do subtítulo */
+  text-align: center;
+  /* Alinha o texto no centro */
+}
+
+.paragrafo {
+  letter-spacing: 1.4px;
+  /* Espaçamento entre as letras */
+  text-align: justify;
+  /* Justifica o texto nas laterais */
+  padding-bottom: 5px;
+  /* Espaçamento inferior entre parágrafos */
+}
 
 /* FIM - SOBRE*/
 
+
 /*CONTATO*/
-.contato {}
+.contato {
+  width: 100%;
+  height: auto;
+  padding-bottom: 30px;
+  margin-top: 100px;
 
-.contato .big-text {}
-
-.contato .big-text::after {
-  /* cria a linha abaixo do texto   */
 }
 
-.contato form {}
+.contato .big-text {
+  color: #b22222;
+}
+
+.contato .big-text::after {
+  content: "";
+  width: 200px;
+  height: 6px;
+  display: block;
+  margin: 0px auto;
+  background-color: #b22222;
+  margin-bottom: 50px;
+}
+
+.contato form {
+  width: 100%;
+  color: #b22222;
+  font-size: 18px;
+}
 
 .contato input,
-textarea {}
+textarea {
+  width: 100%;
+  height: 40px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  padding-left: 10px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  background-color: #f68484;
+  box-shadow: inset;
+}
 
-.contato textarea {}
+.contato textarea {
+  height: 150px;
+  resize: none;
+  padding-top: 10px;
+}
 
-.contato .sub {}
+.contato .sub {
+  font-size: 30px;
+  color: #b22222;
+  margin-bottom: 20px;
+}
 
-.btn {}
+.btn {
+  background-color: #b22222;
+  font-size: 20px;
+  font-weight: bold;
+  color: #b22222;
+}
 
-.btn:hover {}
+.btn:hover {
+  background-color: rgb(249, 191, 191);
+  color: #b22222;
+}
 
-.contato ul {}
+.contato ul {
+  margin-top: 80px;
+  padding: 30px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  color: #b22222;
+}
 
-.contato ul li {}
+.contato ul li {
+  display: flex;
+  align-items: center;
+  color: #b22222;
+  border-bottom: 3px solid #b22222;
+}
 
-.contato ul li i {}
+.contato ul li i {
+  font-size: 38px;
+  margin-right: 15px;
+  color: #b22222;
+}
 
-.contato ul li .whats:hover {}
+.contato ul li .whats:hover {
+  color: #b22222;
+}
 
 /* FIM - CONTATO*/
 
-/*FOOTER*/
+
+
+
+
+/* FOOTER - estilização do rodapé */
 footer {
   padding: 10px;
+  /* espaçamento interno de 10px */
   text-align: center;
+  /* centraliza o conteúdo do rodapé */
   font-size: 16px;
+  /* define o tamanho da fonte */
 }
 
-/* Vídeo responsivo*/
-
+/* Vídeo responsivo - técnica para deixar vídeos do YouTube/Vimeo ajustarem-se ao tamanho da tela */
 .video-container {
   position: relative;
+  /* permite posicionar o iframe dentro do container */
   padding-bottom: 56.25%;
+  /* proporção 16:9 (altura/largura = 9/16 = 0,5625 = 56.25%) */
   height: 0;
+  /* altura inicial zerada, será controlada pelo padding-bottom */
   overflow: hidden;
+  /* esconde qualquer conteúdo que ultrapasse o container */
   max-width: 100%;
+  /* largura máxima de 100% (responsivo) */
   background: #000;
+  /* fundo preto, como padrão de players de vídeo */
 }
 
 .video-container iframe {
   position: absolute;
+  /* permite que o vídeo ocupe toda a área do container */
   top: 0;
+  /* fixa no topo */
   left: 0;
+  /* fixa à esquerda */
   width: 100%;
+  /* ocupa 100% da largura disponível */
   height: 100%;
+  /* ocupa 100% da altura disponível */
   border: 0;
+  /* remove borda do iframe */
 }
 
-/* logo*/
+/* logo - estilização de uma caixa que contém logo e texto */
 .box-4.logo {
   display: flex;
+  /* utiliza flexbox para organizar os elementos em linha */
   align-items: center;
+  /* alinha verticalmente os itens ao centro */
   gap: 10px;
+  /* espaço entre a imagem e o texto */
 }
